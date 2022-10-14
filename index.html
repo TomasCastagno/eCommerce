@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Plantas - Walter Tomás Castagno</title>
+  <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1 id="titulo" class="titulo"> <em>El jardín interior</em> </h1>
+    <nav>
+      <div class="desktop-menu">
+        <a href="#home">Home</a>
+        <a href="#catálogo">Catálogo</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="mobile-menu">
+        <span class="material-symbols-outlined">menu
+        </span>
+      </div>
+    </nav>
+
+    <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+  </header>
+
+  <section id="home">
+    <div>
+      <h1 class="title">Tienda Online</h1>
+      <h2> Venta de plantas <br> para renovar tus espacios <br> y sentirte más cerca de la naturaleza. </h2>
+    </div>
+    <img src="./images/fondo.jpg" alt="">
+  </section>
+
+  <h1 id="catálogo" class="title2">Catálogo</h1>
+  <main id="contenedor-productos">
+
+  </main>
+
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+      <h3>Carrito</h3>
+      <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+      <div id="carrito-contenedor">
+        <!-- <img src=${producto.img} alt= "">
+                     <h3>${producto.nombre}</h3>
+                     <p>{producto.stock} unidades disponibles</p>
+    <p class="precioProducto">Precio:$ ${producto.precio}</p>
+    <button id="agregar${producto.id}" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>-->
+      </div>
+      <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+      <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+      <button class="boton-comprar">Comprar</button>
+    </div>
+  </div>
+
+  <footer id="contacto">
+    <div id="social">
+      <img src="./images/instagram.svg" alt="ig">
+      <img src="./images/twitter.svg" alt="twt">
+    </div>
+    <div class="bottom-mail">
+      <img src="./images/mail 1.svg" alt="mail">
+      Contacto
+    </div>
+    <p>Hecho con &hearts; por W. Tomás Castagno</p>
+  </footer>
+</body>
+<script src="./app.js"></script>
+
+</html>
